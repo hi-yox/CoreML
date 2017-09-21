@@ -15,6 +15,7 @@
 		1795096C1F7260CC00D0E9A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1795096B1F7260CC00D0E9A2 /* main.m */; };
 		179509761F7260CC00D0E9A2 /* CoreMLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 179509751F7260CC00D0E9A2 /* CoreMLDemoTests.m */; };
 		179509811F7260CC00D0E9A2 /* CoreMLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 179509801F7260CC00D0E9A2 /* CoreMLDemoUITests.m */; };
+		179509931F7272C000D0E9A2 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 179509921F7272B900D0E9A2 /* MobileNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1795097C1F7260CC00D0E9A2 /* CoreMLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		179509801F7260CC00D0E9A2 /* CoreMLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMLDemoUITests.m; sourceTree = "<group>"; };
 		179509821F7260CC00D0E9A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179509921F7272B900D0E9A2 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1795095C1F7260CC00D0E9A2 /* AppDelegate.h */,
 				1795095D1F7260CC00D0E9A2 /* AppDelegate.m */,
+				179509921F7272B900D0E9A2 /* MobileNet.mlmodel */,
 				1795095F1F7260CC00D0E9A2 /* ViewController.h */,
 				179509601F7260CC00D0E9A2 /* ViewController.m */,
 				179509621F7260CC00D0E9A2 /* Main.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179509931F7272C000D0E9A2 /* MobileNet.mlmodel in Sources */,
 				179509611F7260CC00D0E9A2 /* ViewController.m in Sources */,
 				1795096C1F7260CC00D0E9A2 /* main.m in Sources */,
 				1795095E1F7260CC00D0E9A2 /* AppDelegate.m in Sources */,
@@ -431,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C48KFNDY4D;
+				DEVELOPMENT_TEAM = VZ4C3W749T;
 				INFOPLIST_FILE = CoreMLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soooner.CoreMLDemo;
@@ -445,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C48KFNDY4D;
+				DEVELOPMENT_TEAM = VZ4C3W749T;
 				INFOPLIST_FILE = CoreMLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soooner.CoreMLDemo;
