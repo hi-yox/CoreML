@@ -24,7 +24,7 @@
     UIImage * image=[UIImage imageNamed:@"demo"];
     MobileNet * net=[MobileNet new];
     NSError * err;
-    //方法一
+    //方法一(适用于简单的单张图片识别)
     VNCoreMLModel * aModel=[VNCoreMLModel modelForMLModel:net.model error:&err];
     VNCoreMLRequest * aRequest=[[VNCoreMLRequest alloc]initWithModel:aModel completionHandler:^(VNRequest * _Nonnull request, NSError * _Nullable error) {
         
@@ -43,6 +43,10 @@
 //    CVPixelBufferRef bufferRes=[self pixelBufferFromCGImage:image.CGImage];
 //    MobileNetOutput * _netOutPut=[net predictionFromImage:bufferRes error:nil];
 //    NSLog(@"%@======%@",_netOutPut.classLabel,_netOutPut.classLabelProbs);
+    
+    //方法三
+//    CVPixelBufferRef cameraSampleBuffer;//摄像机拍摄回来的视频帧，直接调用下列方法，非常快速
+//    [net predictionFromImage:cameraSampleBuffer error:&err];
     
 }
 - (CVPixelBufferRef) pixelBufferFromCGImage: (CGImageRef) image
